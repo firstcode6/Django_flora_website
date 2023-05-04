@@ -1,0 +1,70 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+
+{% block title %}  {% endblock %}
+
+{% block application %}
+ <div class="app">
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="sidebar">
+
+            <div class="logo">
+                <div class="image">
+                     <a href="{% url 'home' %}"><img src="{% static 'main_app/img/flora.png' %}" alt="Main image" title="Home page"></a>
+                </div>
+                <div class="text">
+                    <span>Flora</span>
+                </div>
+            </div>
+            <div class="menu-div-auth">
+                <div class="auth">
+                    {% if request.user.is_authenticated %}
+                        <p>User: {{ user.username }} | <a href="{% url 'logout' %}"><li>Logout</li></a></p>
+                    {% endif %}
+                    {% if request.user.is_superuser %}
+                        <a href="{% url 'admin:index' %}"><li>Admin panel</li></a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="menu-div-nav">
+                <nav class="menu">
+                    <h3>Navigation</h3>
+                    <a href="{% url 'home' %}" class="menu-item"><li><i class="fa-solid fa-clock-rotate-left" style="font-size: 1.16rem;"></i> Stories</li></a>
+                    <a href="{% url 'categories' %}" class="menu-item"><li><i class="bi bi-diagram-3" style="font-size: 1.45rem;"></i> Categories</li></a>
+                    <a href="{% url 'languages' %}" class="menu-item"><li><i class="bi bi-translate" style="font-size: 1.3rem;"></i> Languages</li></a>
+                    <a href="{% url 'about' %}" class="menu-item"><li><i class="fa-regular fa-address-card" style="font-size: 1.2rem;"></i> About</li></a>
+                </nav>
+            </div>
+            <div class="menu-div-buttons">
+                 {% if request.user.is_staff %}
+                    <nav class="menu">
+                        <a href="{% url 'add_story' %}" class="menu-item"><li><button class="button button_add"><i class="bi bi-plus-square-fill" style="font-size: 1.2rem; color: #183153;"></i> Add story</button></li></a>
+                        <a href="{% url 'download_database' %}" class="menu-item"><li><button class="button button_add"><i class="fa-solid fa-floppy-disk" style="font-size: 1.3rem; color: #183153;"></i> Download Database</button></li></a>
+                    </nav>
+                 {% endif %}
+            </div>
+
+        </div>
+
+        <div class="content">
+            {% block content %}  <!-- Jinja -->
+            {% endblock %}
+        </div>
+ </div>
+
+ <footer>
+        <p>TU Ilmenau © 2023. Flora stories.</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+ </footer>
+ <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'main_app/layout.html' %}
+
+{% block title %} Categories {% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Categories ({{ categories.count }}):</h1>
+    <div class="grid-categ">
+        {% if categories %}
+        {% for categ in categories %}
+        <div class="polaroid polaroid-categ">
+            <div class="container">
+                <div class="item-center-bold story-title">Id:</div>
+                <div class="item-center-normal story-text">{{ categ.pk }}</div>
+                <div class="item-center-bold story-title">Category priority:</div>
+                <div class="item-center-normal story-text">{{ categ.category_priority }}</div>
+
+                 <div class="grid-two-columns item-center-normal">
+                    <a href="{% url 'category_details' categ.pk %}" class="button button_read">Details <i class="fa-solid fa-right-to-bracket" style="font-size: 1.1rem; color: #183153;"></i></a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>There is no category</p>
+    {% endif %}
+</div>
+{% endblock %}

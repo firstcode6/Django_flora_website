@@ -1,0 +1,53 @@
+{% extends 'main_app/layout.html' %}
+
+{% block title %} Edit story {% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Edit story</h1>
+    <div class="tank-forms-story">
+         <div class="head-polaroid">
+            <form method="post">
+                {% csrf_token %}
+
+                <p><label class="title-label-story">Story id: {{ form_story.instance.id }}</label></p>
+
+                <p><label class="title-label-story" for="{{ form_story.category.id_for_label }}">{{form_story.category.label}}: </label>{{ form_story.category }}</p>
+                <div class="form-error">{{ form_story.category.errors }}</div>
+                <p><label class="title-label-story" for="{{ form_story.hide_in_stories.id_for_label }}">{{form_story.hide_in_stories.label}}: </label>{{ form_story.hide_in_stories }}</p>
+                <div class="form-error">{{ form_story.hide_in_stories.errors }}</div>
+                <p><label class="title-label-story" for="{{ form_story.deleted.id_for_label }}">{{form_story.deleted.label}}: </label>{{ form_story.deleted }}</p>
+                <div class="form-error">{{ form_story.deleted.errors }}</div>
+                <p><label class="title-label-story" for="{{ form_story.post_priority.id_for_label }}">{{form_story.post_priority.label}}: </label>{{ form_story.post_priority }}</p>
+                <div class="form-error">{{ form_story.post_priority.errors }}</div>
+                <p><label class="title-label-story" for="{{ form_story.fresh_after.id_for_label }}">{{form_story.fresh_after.label}}: </label>{{ form_story.fresh_after }}</p>
+                <div class="form-error">{{ form_story.fresh_after.errors }}</div>
+                <p><label class="title-label-story" for="{{ form_story.fresh_before.id_for_label }}">{{form_story.fresh_before.label}}: </label>{{ form_story.fresh_before }}</p>
+                <div class="form-error">{{ form_story.fresh_before.errors }}</div>
+                <p><label class="title-label-story" for="{{ form_story.clients_eligible.id_for_label }}">{{form_story.clients_eligible.label}}: </label>{{ form_story.clients_eligible }}</p>
+                <div class="form-error">{{ form_story.clients_eligible.errors }}</div>
+
+
+                <p  ><label class="title-label-story" for="{{ form_story.geolocations.id_for_label }}">{{form_story.geolocations.label}}: </label>{{ form_story.geolocations }}</p>
+                <label class="title-label-story" for="id_geolocations">Geolocations static list: </label>
+                <div class="form-error">{{ form_story.geolocations.errors }}</div>
+
+                <!-- items from table Geolocations-->
+                <select id="select-geo" multiple style="width: 100%; padding: 0.375rem 0.75rem;">
+                    {% for geo in geo_values %}
+                        <option value="{{ geo.pk }}" >{{ geo.name }}</option>
+                    {% endfor %}
+                </select>
+
+
+
+                <div class="div-bt">
+                    <button class="button button_save" type="submit"><i class="fa-solid fa-floppy-disk" style="font-size: 1.2rem; color: #183153;"></i> Save</button>
+                    <a class="button button_del" onClick="javascript:history.go(-1);"><i class="fa-solid fa-rectangle-xmark" style="font-size: 1.25rem; color: #183153;"></i> Cancel</a>
+                </div>
+            </form>
+
+         </div>
+    </div>
+</div>
+{% endblock %}

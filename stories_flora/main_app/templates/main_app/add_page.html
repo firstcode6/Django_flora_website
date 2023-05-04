@@ -1,0 +1,50 @@
+{% extends 'main_app/layout.html' %}
+
+{% block title %} Create page for story {% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Create page</h1>
+    <div class="tank-forms">
+         <div class="head-polaroid page">
+
+              <form action="{% url 'add_page' pk_st=1 pk_i18n=1 %}" method="post" enctype="multipart/form-data">
+                  {% csrf_token %}
+                  {{ form_page.media }}
+<!--                  {% for form in form_page %}-->
+<!--                      <p><label class="title-label-page" for="{{ form.id_for_label }}">{{form.label}}: </label>{{ form }}</p>-->
+<!--                      <div class="form-error">{{ form.errors }}</div>-->
+<!--                  {% endfor %}-->
+                  <p><label class="title-label-page" for="{{ form_page.story_i18n.id_for_label }}">{{form_page.story_i18n.label}}: </label>{{ form_page.story_i18n }}</p>
+                  <div class="form-error">{{ form_page.story_i18n.errors }}</div>
+                  <p><label class="title-label-page" for="{{ form_page.mark_deleted.id_for_label }}">{{form_page.mark_deleted.label}}: </label>{{ form_page.mark_deleted }}</p>
+                  <div class="form-error">{{ form_page.mark_deleted.errors }}</div>
+
+<!--              <p><label class="title-label-story" for="{{ form_story.order.id_for_label }}">{{form_story.order.label}}: </label>{{ form_story.order }}</p>-->
+                  <p>
+                      <label class="title-label-page" for="id_order">Order: </label>
+                      <input type="number" name="order" value={{ max_order }} class="form-control" placeholder="Order" required id="id_order">
+                  </p>
+                  <div class="form-error">{{ form_story.order.errors }}</div>
+                  <div class="form-error">{{ error_message }}</div>
+
+                  <p><label class="title-label-page" for="{{ form_page.image.id_for_label }}">{{form_page.image.label}}: </label>{{ form_page.image }}</p>
+                  <div class="form-error">{{ form_page.image.errors }}</div>
+                  <p><label class="title-label-page" for="{{ form_page.icon.id_for_label }}">{{form_page.icon.label}}: </label>{{ form_page.icon }}</p>
+                  <div class="form-error">{{ form_page.icon.errors }}</div>
+                  <p><label class="title-label-page" for="{{ form_page.headline.id_for_label }}">{{form_page.headline.label}}: </label>{{ form_page.headline }}</p>
+                  <div class="form-error">{{ form_page.headline.errors }}</div>
+                  <p><label class="title-label-page" for="{{ form_page.text.id_for_label }}">{{form_page.text.label}}: </label>{{ form_page.text }}</p>
+                  <div class="form-error">{{ form_page.text.errors }}</div>
+
+
+                 <div class="div-bt">
+                     <button class="button button_save" type="submit"><i class="fas fa-plus-circle" style="font-size: 1.2rem; color: #183153;"></i> Add</button>
+                     <a class="button button_del" onClick="javascript:history.go(-1);"><i class="fa-solid fa-rectangle-xmark" style="font-size: 1.25rem; color: #183153;"></i> Cancel</a>
+                 </div>
+             </form>
+         </div>
+    </div>
+
+</div>
+{% endblock %}

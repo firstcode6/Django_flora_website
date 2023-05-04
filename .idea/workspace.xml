@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8d0b5b88-e4b3-4ca0-9a07-f7e8bac83a13" name="Changes" comment="url images and styles" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2KPM8N1kKml19x3GUgW7OB7t6lV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ravil/PycharmProjects/Django_flora_website",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ravil\PycharmProjects\flora-stories-editor\stories_flora\main_app\templatetags" />
+      <recent name="C:\Users\ravil\PycharmProjects\flora-stories-editor\stories_flora\main_app\templates\main_app" />
+      <recent name="C:\Users\ravil\PycharmProjects\flora-stories-editor\stories_flora\main_app\static\main_app\img" />
+      <recent name="C:\Users\ravil\PycharmProjects\flora-stories-editor\stories_flora\main_app\static\main_app\img\favicon" />
+      <recent name="C:\Users\ravil\PycharmProjects\flora-stories-editor\stories_flora\main_app\fixtures" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ravil\PycharmProjects\flora-stories-editor\stories_flora\main_app\static\main_app\img" />
+      <recent name="C:\Users\ravil\PycharmProjects\flora-stories-editor" />
+      <recent name="C:\Users\ravil\PycharmProjects\flora-stories-editor\stories_flora\main_app\static\main_app\css" />
+      <recent name="C:\Users\ravil\PycharmProjects\flora-stories-editor\stories_flora\main_app\static\main_app\icons" />
+      <recent name="C:\Users\ravil\PycharmProjects\flora-stories-editor\stories_flora\main_app\fixture" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d0b5b88-e4b3-4ca0-9a07-f7e8bac83a13" name="Changes" comment="" />
+      <created>1673871606133</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673871606133</updated>
+    </task>
+    <task id="LOCAL-00001" summary="main commit">
+      <created>1673902992897</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673902992897</updated>
+    </task>
+    <task id="LOCAL-00002" summary="makrdown without split screen">
+      <created>1674573826822</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674573826822</updated>
+    </task>
+    <task id="LOCAL-00003" summary="copy function">
+      <created>1674593776897</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674593776897</updated>
+    </task>
+    <task id="LOCAL-00004" summary="migration issue">
+      <created>1674649833243</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674649833243</updated>
+    </task>
+    <task id="LOCAL-00005" summary="urls issue">
+      <created>1674650204469</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674650204469</updated>
+    </task>
+    <task id="LOCAL-00006" summary="migration issue">
+      <created>1674650594395</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674650594395</updated>
+    </task>
+    <task id="LOCAL-00007" summary="migration issue2">
+      <created>1674650822114</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674650822114</updated>
+    </task>
+    <task id="LOCAL-00008" summary="renaming the uploaded file">
+      <created>1674846149707</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674846149707</updated>
+    </task>
+    <task id="LOCAL-00009" summary="settings file">
+      <created>1674846885817</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674846885817</updated>
+    </task>
+    <task id="LOCAL-00010" summary="initializing the database">
+      <created>1675193072754</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675193072754</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Confirm to copy">
+      <created>1675194112661</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675194112661</updated>
+    </task>
+    <task id="LOCAL-00012" summary="description">
+      <created>1675436824880</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675436824880</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Renaming uploaded files.">
+      <created>1675699864214</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675699864214</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Splitting the screen Markdown">
+      <created>1676055058196</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676055058196</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Putting styles in order(the first step)">
+      <created>1676458674307</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676458674308</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Common editing styles(the last step)">
+      <created>1679484567063</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679484567063</updated>
+    </task>
+    <task id="LOCAL-00017" summary="combobox Geolocations table for combobox and adding the new column (geolocations) for Stories">
+      <created>1679681359592</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679681359592</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Convert odl database to new one.">
+      <created>1679846627391</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679846627391</updated>
+    </task>
+    <task id="LOCAL-00019" summary="convert markdown, button &quot;back&quot; and &quot;cancel&quot;">
+      <created>1680259451629</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680259451629</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updated tables(delated and mark_deleted)">
+      <created>1680691345142</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1680691345142</updated>
+    </task>
+    <task id="LOCAL-00021" summary="1) &quot;order&quot; column was added to Pages table&#10;2) clients and geolocations can be None(Null) now&#10;3) the information about story in german is available in the main page">
+      <created>1681470289197</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1681470289198</updated>
+    </task>
+    <task id="LOCAL-00022" summary="1) &quot;order&quot; column is unique&#10;2) filter actual date&#10;3) css for main page">
+      <created>1681906186459</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1681906186459</updated>
+    </task>
+    <task id="LOCAL-00023" summary="authorization, users, styles">
+      <created>1682258969782</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1682258969782</updated>
+    </task>
+    <task id="LOCAL-00024" summary="authorization, users, styles">
+      <created>1682258990084</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1682258990084</updated>
+    </task>
+    <task id="LOCAL-00025" summary="url images and styles">
+      <created>1682507344361</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1682507344361</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="main commit" />
+    <MESSAGE value="makrdown without split screen" />
+    <MESSAGE value="copy function" />
+    <MESSAGE value="urls issue" />
+    <MESSAGE value="migration issue" />
+    <MESSAGE value="migration issue2" />
+    <MESSAGE value="renaming the uploaded file" />
+    <MESSAGE value="settings file" />
+    <MESSAGE value="initializing the database" />
+    <MESSAGE value="Confirm to copy" />
+    <MESSAGE value="description" />
+    <MESSAGE value="Renaming uploaded files." />
+    <MESSAGE value="Splitting the screen Markdown" />
+    <MESSAGE value="Putting styles in order(the first step)" />
+    <MESSAGE value="Common editing styles(the last step)" />
+    <MESSAGE value="combobox Geolocations table for combobox and adding the new column (geolocations) for Stories" />
+    <MESSAGE value="Convert odl database to new one." />
+    <MESSAGE value="convert markdown, button &quot;back&quot; and &quot;cancel&quot;" />
+    <MESSAGE value="updated tables(delated and mark_deleted)" />
+    <MESSAGE value="1) &quot;order&quot; column was added to Pages table&#10;2) clients and geolocations can be None(Null) now&#10;3) the information about story in german is available in the main page" />
+    <MESSAGE value="1) &quot;order&quot; column is unique&#10;2) filter actual date&#10;3) css for main page" />
+    <MESSAGE value="authorization, users, styles" />
+    <MESSAGE value="url images and styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="url images and styles" />
+  </component>
+</project>

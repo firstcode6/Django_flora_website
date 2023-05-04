@@ -1,0 +1,118 @@
+{% extends 'main_app/layout.html' %}
+
+{% load blog_extras %}
+
+{% block title %} {{ page_story.title|safe }} {% endblock %}
+
+{% block content %}
+<div class="features">
+     <div class="head-polaroid">
+        <div class="container">
+
+            <div class="grid-two-columns"><h3>Story id: {{ page_story.story }}</h3></div>
+
+            <div class="item-center-bold story-title">Category:</div>
+            <div class="item-center-normal story-text">{{ page_story.story.category }}</div>
+            <div class="item-center-bold story-title">Hide in stories:</div>
+            <div class="item-center-normal story-text">{{ page_story.story.hide_in_stories }}</div>
+            <div class="item-center-bold story-title">Post priority:</div>
+            <div class="item-center-normal story-text">{{ page_story.story.post_priority }}</div>
+            <div class="item-center-bold story-title">Deleted:</div>
+            <div class="item-center-normal story-text">{{ page_story.story.deleted }}</div>
+            <div class="item-center-bold story-title">Fresh before:</div>
+            <div class="item-center-normal story-text">{{ page_story.story.fresh_before }}</div>
+            <div class="item-center-bold story-title">Fresh after:</div>
+            <div class="item-center-normal story-text">{{ page_story.story.fresh_after }}</div>
+            <div class="item-center-bold story-title">Clients eligible:</div>
+            <div class="item-center-normal story-text">{{ page_story.story.clients_eligible }}</div>
+            <div class="item-center-bold story-title">Geolocations:</div>
+            <div class="item-center-normal story-text">{{ page_story.story.geolocations }}</div>
+
+
+            <div class="grid-two-columns">
+                 <div class="head-polaroid static_i18n">
+                    <div class="container">
+
+                        <div class="grid-two-columns"><h3>Story translation id: {{ page_story.pk }}</h3></div>
+                        <div class="grid-two-columns"><h3>Language: {{ page_story.language }} </h3></div>
+                        <div class="item-center-bold i18n-title">Title image:</div>
+                        <div class="item-center-bold i18n-title">Icon image:</div>
+                        <div class="grid-img"><img src={{ page_story.title_image.url|unquote_new|remove_media }} alt="Title image"></div>
+                        <div class="grid-img"><img src={{ page_story.title_icon.url|unquote_new|remove_media  }} alt="Icon image"></div>
+
+
+                        <div class="grid-two-columns item-left-bold i18n-title">Title: {{ page_story.title|convert_markdown|safe }}</div>
+                        <div class="grid-two-columns item-left-bold i18n-title">Subtitle: {{ page_story.subtitle|convert_markdown|safe }}</div>
+
+
+<!--                        <div class="grid-two-columns item-left-bold i18n-title">Title:</div>-->
+<!--                        <div class="grid-two-columns item-left-normal i18n-text">{{ page_story.title|convert_markdown|safe }}</div>-->
+<!--                        <div class="grid-two-columns item-left-bold i18n-title">Subtitle:</div>-->
+<!--                        <div class="grid-two-columns item-left-normal i18n-text">{{ page_story.subtitle|convert_markdown|safe }}</div>-->
+
+
+                        <div class="item-center-normal"><h3>Pages ({{ pages.count }}):</h3></div>
+
+                        <div class="item-center-normal">
+                            {% if request.user.is_staff %}
+                                <a href="{% url 'add_page' pk_st=page_story.story.pk pk_i18n=page_story.pk %}"><button class="button button_add"><i class="fa-solid fa-square-plus" style="font-size: 1.25rem; color: #183153;"></i> Add page</button></a>
+                                <a href="{% url 'edit_story_i18n' pk_st=page_story.story.pk pk=page_story.pk %}" class="button button_edit"><i class="fa-solid fa-pen-to-square" style="font-size: 1.1rem; color: #183153;"></i> Edit</a>
+                            {% endif %}
+                        </div>
+
+                        <div class="grid-two-columns">
+
+                                {% if pages %}
+                                {% for p in pages %}
+                                <div class="polaroid page">
+                                    <div class="container">
+
+                                        <div class="item-center-bold page-title">Image:</div>
+                                        <div class="item-center-bold page-title">Icon:</div>
+                                        <div class="grid-img"><img src={{ p.image.url|unquote_new|remove_media }} alt="Image"></div>
+                                        <div class="grid-img"><img src={{ p.icon.url|unquote_new|remove_media  }} alt="Icon"></div>
+
+                                        <div class=" item-left-bold page-title">Page id: <p class="page-text">{{ p.pk }}</p></div>
+                                        <div class=" item-left-bold page-title">Mark deleted: <p class="page-text">{{ p.mark_deleted }}</p></div>
+                                        <div class=" item-left-bold page-title">Headline: {{ p.headline|convert_markdown|safe }}</div>
+                                        <div class=" item-left-bold page-title">Order: <p class="page-text">{{ p.order }}</p></div>
+
+
+
+<!--                                        <div class="grid-two-columns item-left-bold page-title">Headline:</div>-->
+<!--                                        <div class="grid-two-columns item-left-normal page-text">{{ p.headline|convert_markdown|safe }}</div>-->
+                                        <div class="grid-two-columns item-left-bold page-title">Text:</div>
+                                        <div class="grid-two-columns item-left-normal page-text">{{ p.text|convert_markdown|safe }}</div>
+
+                                        <div class="item-center-normal">
+                                            {% if request.user.is_staff %}
+                                                <a href="{% url 'copy_page' pk_st=page_story.story.pk pk_i18n=page_story.pk pk_page=p.pk %}" class="button button_copy" onclick="return confirm('Do you really want to copy &quot;Page id:{{ p.pk }}&quot;?')"><i class="fa-regular fa-copy" style="font-size: 1.1rem; color: #183153;"></i> Copy</a>
+                                            {% endif %}
+                                        </div>
+                                         <div class="item-center-normal">
+                                             {% if request.user.is_staff %}
+                                                <a href="{% url 'edit_page' pk_st=page_story.story.pk pk_i18n=page_story.pk pk=p.pk %}" class="button button_edit"><i class="fa-solid fa-pen-to-square" style="font-size: 1.1rem; color: #183153;"></i> Edit</a>
+                                             {% endif %}
+                                         </div>
+
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                {% else %}
+                                <p>There is no page</p>
+                                {% endif %}
+
+                        </div>
+
+                        <a class="button button_edit" onClick="javascript:history.go(-1);"><i class="fa-solid fa-right-to-bracket fa-rotate-180" style="font-size: 1.1rem; color: #183153;"></i> Previous Page</a>
+                        <a href="{% url 'story_details' page_story.story %}" class="button button_edit"><i class="fa-solid fa-right-to-bracket fa-rotate-180" style="font-size: 1.1rem; color: #183153;"></i>  Back to stories</a>
+
+
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+{% block title %} Registration {% endblock %}
+
+{% block application %}
+<div class="authorization">
+     <div class="background">
+        <div class="shape position1"><img src="{% static 'main_app/img/flora_opacuty.png' %}"></div>
+        <div class="shape position2"><img src="{% static 'main_app/img/flora_opacuty.png' %}"></div>
+    </div>
+    <form method="post">
+        <h3>Registration</h3>
+        {% csrf_token %}
+        {% for f in form %}
+            <p><label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}: </label>{{ f }}</p>
+            <div class="form-error">{{ f.errors }}</div>
+        {% endfor %}
+        <button type="submit">Register</button>
+
+         <div class="form-info">Back to <li><a href="{% url 'login' %}">Login</a></li></div>
+    </form>
+</div>
+{% endblock %}

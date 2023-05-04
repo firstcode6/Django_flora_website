@@ -1,0 +1,40 @@
+{% extends 'main_app/layout.html' %}
+
+{% block title %} Categories {% endblock %}
+
+{% block content %}
+<div class="features">
+    <div class="head-polaroid-categ">
+        <div class="container">
+            <div class="grid-two-columns"><h3>Category id: {{ key_category.pk }}, Category priority: {{ key_category.category_priority }}</h3></div>
+
+            <div class="item-center-normal"><h3>Translation of categories ({{ categories_i18n.count }}):</h3></div>
+
+            <div class="grid-two-columns">
+                <div class="grid-categ">
+                    {% if categories_i18n %}
+                    {% for ctg in categories_i18n %}
+                    <div class="polaroid polaroid-categs">
+                        <div class="container">
+
+                            <div class="grid-two-columns item-left-bold i18n-title">Category translation id: <p class="i18n-text">{{ ctg.pk }}</p></div>
+                            <div class="grid-two-columns item-left-bold i18n-title">Name: <p class="i18n-text">{{ ctg.name }}</p></div>
+                            <div class="grid-two-columns item-left-bold i18n-title">Language: <p class="i18n-text">{{ ctg.language }}</p></div>
+                            <div class="grid-two-columns item-left-bold i18n-title">Category: <p class="i18n-text">{{ ctg.category }}</p></div>
+
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% else %}
+                    <p>There is no story i18n</p>
+                    {% endif %}
+                </div>
+            </div>
+
+             <a class="button button_edit" onClick="javascript:history.go(-1);"><i class="fa-solid fa-right-to-bracket fa-rotate-180" style="font-size: 1.1rem; color: #183153;"></i> Previous Page</a>
+             <a href="{% url 'categories' %}" class="button button_edit"><i class="fa-solid fa-right-to-bracket fa-rotate-180" style="font-size: 1.1rem; color: #183153;"></i>  Back to categories</a>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

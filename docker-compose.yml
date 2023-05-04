@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  flora_stories_editor_app:
+    restart: unless-stopped
+    container_name: flora_stories_editor_app
+    depends_on:
+      - flora_stories_editor_postgres
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./stories_flora:/stories_flora:rw
+
+  flora_stories_editor_postgres:
+    restart: unless-stopped
+    image: postgres
+    container_name: flora_stories_editor_postgres
+    environment:
+      - POSTGRES_DB=stories3
+      - POSTGRES_USER=user1
+      - POSTGRES_PASSWORD=firststep
+    expose:
+      - 5432
+    #ports:
+    #  - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

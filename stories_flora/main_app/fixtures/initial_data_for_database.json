@@ -1,0 +1,298 @@
+[
+  {
+    "model": "main_app.Languages",
+    "fields": {
+      "language": "en"
+    }
+
+  },
+  {
+    "model": "main_app.Languages",
+    "fields": {
+      "language": "de"
+    }
+  },
+
+
+
+ {
+    "model": "main_app.Categories",
+    "pk": 1,
+    "fields": {
+      "category_priority": 50
+    }
+  },
+  {
+    "model": "main_app.Categories",
+    "pk": 2,
+    "fields": {
+      "category_priority": 20
+    }
+  },
+
+
+
+   {
+    "model": "main_app.Categories_i18n",
+    "pk": 1,
+    "fields": {
+      "name": "News",
+      "language": "en",
+      "category": 1
+    }
+  },
+  {
+    "model": "main_app.Categories_i18n",
+    "pk": 2,
+    "fields": {
+      "name": "Nachricht",
+      "language": "de",
+      "category": 1
+    }
+  },
+  {
+    "model": "main_app.Categories_i18n",
+    "pk": 3,
+    "fields": {
+      "name": "Tips",
+      "language": "en",
+      "category": 2
+    }
+  },
+  {
+    "model": "main_app.Categories_i18n",
+    "pk": 4,
+    "fields": {
+      "name": "Tipps",
+      "language": "de",
+      "category": 2
+    }
+  },
+
+
+
+ {
+    "model": "main_app.Geolocations",
+    "pk": 1,
+    "fields": {
+      "name": "Germany"
+    }
+  },
+ {
+    "model": "main_app.Geolocations",
+    "pk": 2,
+    "fields": {
+      "name": "France"
+    }
+  },
+   {
+    "model": "main_app.Geolocations",
+    "pk": 3,
+    "fields": {
+      "name": "Austria"
+    }
+  },
+
+   {
+    "model": "main_app.Geolocations",
+    "pk": 4,
+    "fields": {
+      "name": "Italy"
+    }
+  },
+
+
+
+
+  {
+    "model": "main_app.Stories",
+    "pk": 1,
+    "fields": {
+      "hide_in_stories": false,
+      "post_priority": 20,
+      "fresh_after": "2022-07-23",
+      "fresh_before": "2022-08-23",
+      "clients_eligible": [2],
+      "geolocations": ["Germany", "France"],
+
+      "category": 1
+    }
+  },
+    {
+    "model": "main_app.Stories",
+    "pk": 2,
+    "fields": {
+      "hide_in_stories": false,
+      "post_priority": 20,
+      "fresh_after": "2022-07-25",
+      "fresh_before": "2022-11-30",
+      "clients_eligible": [2],
+      "geolocations": ["Germany", "France"],
+
+      "category": 2
+    }
+  },
+
+
+
+
+  {
+    "model": "main_app.Stories_i18n",
+    "pk": 1,
+    "fields": {
+      "title": "# Impatiens glandulifera",
+      "subtitle": "## Invasive plant species in Germany",
+      "title_icon": "stories/title_icon/title_icon_1-en_1_0.jpg",
+      "title_image": "stories/title_image/title_image_1-en_1_0.png",
+      "language": "en",
+      "story": 1
+    }
+  },
+  {
+    "model": "main_app.Stories_i18n",
+    "pk": 2,
+    "fields": {
+      "title": "Ackerwildkrau",
+      "subtitle": "## Pflanzengesellschaft des Jahres 2021",
+      "title_icon": "stories/title_icon/title_icon_1-en_1_0.jpg",
+      "title_image": "stories/title_image/title_image_1-en_1_0.png",
+      "language": "de",
+      "story": 1
+    }
+  },
+  {
+    "model": "main_app.Stories_i18n",
+    "pk": 3,
+    "fields": {
+      "title": "Relevant features not visible",
+      "subtitle": "Reliable identification is not always possible",
+      "title_icon": "stories/title_icon/title_icon_1-en_1_0.jpg",
+      "title_image": "stories/title_image/title_image_1-en_1_0.png",
+      "language": "en",
+      "story": 2
+    }
+  },
+  {
+    "model": "main_app.Stories_i18n",
+    "pk": 4,
+    "fields": {
+      "title": "Bestimmungsrelevante Merkmale nicht erkennbar",
+      "subtitle": "Sichere Erkennung ist nicht immer möglich",
+      "title_icon": "stories/title_icon/title_icon_1-en_1_0.jpg",
+      "title_image": "stories/title_image/title_image_1-en_1_0.png",
+      "language": "de",
+      "story": 2
+    }
+  },
+
+
+
+  {
+    "model": "main_app.Pages",
+    "pk": 1,
+    "fields": {
+      "image": "stories/image/image_id1_story1-en_1_0.jpeg",
+      "icon": "stories/icon/icon_id1_story1-en_1_0.png",
+      "headline": "Invasive species",
+      "text": "When species spread outside their native habitat, they are often referred to as invasive species.",
+      "deleted": false,
+      "story_i18n": 1
+    }
+  },
+    {
+    "model": "main_app.Pages",
+    "pk": 2,
+    "fields": {
+      "image": "stories/image/image_id1_story1-en_1_0.jpeg",
+      "icon": "stories/icon/icon_id1_story1-en_1_0.png",
+      "headline": "Impatiens glandulifera",
+      "text": "Native to the Himalayas, the Himalayan balsam",
+      "deleted": false,
+      "story_i18n": 1
+    }
+  },
+    {
+    "model": "main_app.Pages",
+    "pk": 3,
+    "fields": {
+      "image": "stories/image/image_id1_story1-en_1_0.jpeg",
+      "icon": "stories/icon/icon_id1_story1-en_1_0.png",
+      "headline": "Very similar species",
+      "text": "Some species look so similar that they can be distinguished from each other only at certain times - for example, when they bear fruit.",
+      "deleted": false,
+      "story_i18n": 1
+    }
+  },
+    {
+    "model": "main_app.Pages",
+    "pk": 4,
+    "fields": {
+      "image": "stories/image/image_id1_story1-en_1_0.jpeg",
+      "icon": "stories/icon/icon_id1_story1-en_1_0.png",
+      "headline": "Pflanzengesellschaft des Jahres",
+      "text": "Seit 2019 wird jedes Jahr die Pflanzengesellschaft des Jahres von der",
+      "deleted": false,
+      "story_i18n": 2
+    }
+  },
+    {
+    "model": "main_app.Pages",
+    "pk": 5,
+    "fields": {
+      "image": "stories/image/image_id1_story1-en_1_0.jpeg",
+      "icon": "stories/icon/icon_id1_story1-en_1_0.png",
+      "headline": "Geschichte",
+      "text": "Ackerbau und Kulturpflanzen haben die Segetalvegetation der Kalkäcker schon seit der Bronzezeit beeinflusst.",
+      "deleted": false,
+      "story_i18n": 2
+    }
+  },
+    {
+    "model": "main_app.Pages",
+    "pk": 6,
+    "fields": {
+      "image": "stories/image/image_id1_story1-en_1_0.jpeg",
+      "icon": "stories/icon/icon_id1_story1-en_1_0.png",
+      "headline": "Best results with flower",
+      "text": "For most species, a photo of the flower or inflorescence provides the best results.",
+      "deleted": false,
+      "story_i18n": 3
+    }
+  },
+    {
+    "model": "main_app.Pages",
+    "pk": 7,
+    "fields": {
+      "image": "stories/image/image_id1_story1-en_1_0.jpeg",
+      "icon": "stories/icon/icon_id1_story1-en_1_0.png",
+      "headline": "Combination of perspectives",
+      "text": "The combination of perspectives improves the identification result. In doing so, the AI receives more information and, above all, more details.",
+      "deleted": false,
+      "story_i18n": 3
+    }
+  },
+    {
+    "model": "main_app.Pages",
+    "pk": 8,
+    "fields": {
+      "image": "stories/image/image_id1_story1-en_1_0.jpeg",
+      "icon": "stories/icon/icon_id1_story1-en_1_0.png",
+      "headline": "Sehr ähnliche Arten",
+      "text": "Manche Arten sehen sich so ähnlich, dass sie nur zu bestimmten Zeiten voneinander unterschieden werden können – beispielsweise, wenn sie Früchte tragen.",
+      "deleted": false,
+      "story_i18n": 4
+    }
+  },
+    {
+    "model": "main_app.Pages",
+    "pk": 9,
+    "fields": {
+      "image": "stories/image/image_id1_story1-en_1_0.jpeg",
+      "icon": "stories/icon/icon_id1_story1-en_1_0.png",
+      "headline": "Beste Ergebnisse mit Blüte",
+      "text": "Bei den meisten Arten liefert ein Foto der Blüte oder des Blütenstandes die besten Ergebnisse.",
+      "deleted": false,
+      "story_i18n": 4
+    }
+  }
+]

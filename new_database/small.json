@@ -1,0 +1,406 @@
+[
+ {
+    "id": 1019,
+    "global_story_id": 6,
+    "category": "Aktuelles",
+    "category_priority": 50,
+    "post_priority": 20,
+    "fresh_after": "2018-10-01",
+    "fresh_before": "2018-12-31",
+    "language": "de",
+    "title": "Saisonabschluss",
+    "subtitle": "Die Vegetationsperiode neigt sich dem Ende entgegen...",
+    "title_icon": "https://flora-cdn.tu-ilmenau.de/help/icon_story5.jpg",
+    "title_image": "https://flora-cdn.tu-ilmenau.de/help/icon_story5.jpg",
+    "pages": [
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img__5_1.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Die Vegetationsperiode neigt sich dem Ende entgegen...",
+        "text": "...aber wir haben einen sehr erfolgreichen Sommer hinter uns! Dank Ihrer Mithilfe haben wir nun über 1 Million Pflanzenfotos in unserer Datenbank, wodurch die Pflanzenerkennung unserer Flora Incognita App weiter verbessert wird. Hier nun ein paar Daten über die Nutzeraktivitäten der vergangenen Monate."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img__5_2_DE.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": " Bereits 17900 gültige Flora Capture-Beobachtungen ",
+        "text": " Seit Veröffentlichung der Flora Capture App sind schon 17900 gültige Beobachtungen bei uns eingegangen! Das bedeutet, wir konnten über 89000 Fotos allein durch die Capture App in unsere Datenbank einfügen. Dabei wurden 1160 der 2770 Arten unserer Artenliste abgedeckt. (Stand vom 20.09.2018)"
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img__5_3.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Ganz Deutschland und noch mehr!",
+        "text": " Wir haben Flora Capture-Beobachtungen aus allen Teilen Deutschlands erhalten! Wir freuen uns über so viele engagierte Nutzerinnen und Nutzer und hoffen, auch im nächsten Jahr auf Ihre großartige Mithilfe zählen zu dürfen."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img__5_4_DE.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "2018 – Die erste Version der Flora Incognita App geht online",
+        "text": " Die Flora Incognita App wurde in diesem Jahr schon 259900 Mal genutzt! Ganze 49470 Pflanzenbeobachtungen konnten als erkannt bestätigt werden- von 1705 verschiedenen Arten. (Stand vom 26.09.2018)"
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img__5_5.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": " Die am häufigsten bestimmte Art!",
+        "text": " Achillea millefolium – die Wiesen-Schafgarbe – wurde mit fast 800 Bestimmungsanfragen durch die Flora Incognita App am häufigsten aufgenommen. Die Art kommt in ganz Deutschland häufig vor und blüht über einen langen Zeitraum.  Mehr über die Wiesen-Scharfgabre gibt´s auf der detaillierten Steckbriefseite in unserer Artenliste zu finden."
+      }
+    ]
+  },
+  {
+    "id": 1020,
+    "global_story_id": 6,
+    "category": "News",
+    "category_priority": 50,
+    "post_priority": 20,
+    "fresh_after": "2018-10-01",
+    "fresh_before": "2018-12-31",
+    "language": "en",
+    "title": "End of the season",
+    "subtitle": " The vegetation period comes to an end...",
+    "title_icon": "https://flora-cdn.tu-ilmenau.de/help/icon_story5.jpg",
+    "title_image": "https://flora-cdn.tu-ilmenau.de/help/icon_story5.jpg",
+    "pages": [
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img__5_1.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "The vegetation period comes to an end...",
+        "text": "...but a very successful summer lies behind us! Thanks to your help, we now have over 1 million plant pictures in our database, which improves even more the capability of our Flora Incognita App to identify plant species. Now let´s have a look at the users activity of the last months."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img__5_2_EN.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "17900 valid Flora Capture observations!",
+        "text": " Since the Flora Capture App was released, we received a total of 17900 valid observations. This equals a sum of about 89000 pictures that went from Flora Capture into our database. They included 1160 different species. (state of 20.09.2018)"
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img__5_3.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "All of Germany and beyond!",
+        "text": "We received Flora Capture observations from all over Germany! We´re happy about so many passionate users and hope for your ongoing support."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img__5_4_EN.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "2018 – The first version of the Flora Incognita App is released ",
+        "text": "The Flora Incognita App has already been used for 259900 times now! A total of 49470 observations were confirmed with a species name. They covered 1705 different species. (state of 26.09.2018)"
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img__5_5.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "The species that tops them all",
+        "text": " Achillea millefolium – Common Yarrow – is with a count of nearly 800 requests the most frequently observed species. It is common to all parts of Germany and flowers until late in the year. If you want to learn more about the species, check out the detail pages in the species list."
+      }
+    ]
+  },
+ {
+    "id": 1099,
+    "global_story_id": 49,
+    "category": "Tipps",
+    "category_priority": 20,
+    "post_priority": 17,
+    "fresh_after": "2022-05-10",
+    "fresh_before": "2022-05-16",
+    "language": "de",
+    "title": "Wuchsformen",
+    "subtitle": "Was soll ich auswählen?",
+    "title_icon": "https://flora-cdn.tu-ilmenau.de/help/icon_story49.jpg",
+    "title_image": "https://flora-cdn.tu-ilmenau.de/help/title_story49.jpg",
+    "pages": [
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_DE_1.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Auswahl der Wuchsform",
+        "text": "Als erster Schritt zur Pflanzenbestimmung mit Flora Incognita steht die Entscheidung für eine der vier vorgegebenen Wuchsformen. Diese Vorauswahl ist nötig, da sich für jede Wuchsform andere Pflanzenteile besser für die Bestimmung eignen. So ist es beispielsweise an einem hohen Baum schwierig, die Blüten zu fotografieren, während es bei einem Löwenzahn wenig sinnvoll ist, nach einem Bild der Rinde zu fragen.\nWenn Sie sich nicht sicher sind, welcher Wuchsform Ihr Pflanzenfund zuzuordnen ist, können Sie einfach eine beliebige Kategorie auswählen. Die Bestimmung wird auch dann funktionieren, nur wird möglicherweise eine unpassende Pflanzenperspektive gefordert. Die Bestimmung wird auch dann funktionieren, möglicherweise nur nicht ganz so präzise sein."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_2.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_2.png",
+        "headline": "Wildblume oder Strauch",
+        "text": "Diese Kategorie beinhaltet alle Kräuter und Sträucher, die kleiner sind als 2 Meter und keinen einzelnen, verholzten Stamm besitzen – was sie von Bäumen unterscheidet. Diese Wuchsform vereint die meisten Pflanzenarten."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_3.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_3.png",
+        "headline": "Baum",
+        "text": "Bäume zeichnen sich dadurch aus, dass sie langlebig sind und verholzen. Sie haben grundsätzlich einen Stamm, der sich zu einer Krone verzweigt. Durch Ihre Größe sind Blätter, Blüten oder Früchte oft nur schwer zu erreichen. Die meisten blühen nur kurz, deswegen fragen wir bei Bäumen je nach Jahreszeit vorrangig nach Fotos von Blättern, Rinde oder den Früchten, die sich auch auf den Boden gefallen noch zur Bestimmung eignen."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_4.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_4.png",
+        "headline": "Gras",
+        "text": "Verwenden Sie diese Kategorie für Süß- und Sauergräser, die durch lange, dünne Blätter mit parallellaufender Nervatur und fehlenden Blattstielen gekennzeichnet sind. Ihre Blüten sind unscheinbar, sie sitzen in ähren- oder rispenförmigen Blütenständen, wie man sie beispielsweise von Getreide - welche allesamt zu den Süßgräsern gehören - kennt. Auf den ersten Blick sind diese Arten schwer zu unterscheiden, daher ist es wichtig, nah an die Pflanze heranzugehen. Besonders das Blatthäutchen, was sich zwischen dem Blatt und dem Stängel befindet, und Einzelblüten sind wichtig für die Identifizierung. Für eine sichere Bestimmung sind mehrere sehr detailreiche und aussagekräftige Fotos notwendig."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_5.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_5.png",
+        "headline": "Farn",
+        "text": "Farne bestehen häufig nur aus einer grundständigen Blattrosette oder einzelnen Blättern (Wedel), die sich schneckenhausartig entrollen, wenn sie jung sind. Da Farne weder Blüten noch Früchte ausbilden, gibt es diese Bildkategorien bei den Farnen nicht. Stattdessen kann man auf den Unterseiten der Wedel bei vielen Arten auffällige Erhebungen (Sori) entdecken. Darin werden die Sporen für die Vermehrung gebildet. Die Form und Anordnung dieser Erhebungen sind oft arttypisch. Das macht sie wesentlich für die Bestimmung. Haben Wedel keine Sporen, bezeichnet man sie als steril. Diese sehen dann oft anders aus als die fertilen Wedel, obwohl sie der gleichen Pflanze angehören."
+      }
+    ]
+  },
+  {
+    "id": 1100,
+    "global_story_id": 49,
+    "category": "Tips",
+    "category_priority": 20,
+    "post_priority": 17,
+    "fresh_after": "2022-05-10",
+    "fresh_before": "2022-05-16",
+    "language": "en",
+    "title": "Growth habit",
+    "subtitle": "Which to choose?",
+    "title_icon": "https://flora-cdn.tu-ilmenau.de/help/icon_story49.jpg",
+    "title_image": "https://flora-cdn.tu-ilmenau.de/help/title_story49.jpg",
+    "pages": [
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_EN_1.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Why select a growth habit",
+        "text": "The first step in plant identification with Flora Incognita is to choose one of the four given growth habits. This selection is necessary because for eachform of growth, different parts of the plant are better suited for identification. For example, on a tall tree it is difficult to photograph the flowers, while on a dandelion it makes little sense to ask for a picture of the bark.\nIf you are not sure which growth form your plant belongs to, you can simply select any category. Identification will work even then, just possibly not be quite as precise."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_2.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_2.png",
+        "headline": "Herb or shrub",
+        "text": "This category includes all herbs and shrubs that are less than 2 meters tall and do not have a single woody stem - which distinguishes them from trees. This growth form unites the majority of plant species."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_3.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_3.png",
+        "headline": "Tree",
+        "text": "Trees have a woody stem and life for many years. Their trunk branches out to form a crown. Due to their size, leaves, flowers or fruits are often difficult to reach. Most of them bloom only for a short time, therefore, depending on the time of year, we primarily ask for photos of leaves, bark or the fruits of trees, which are still suitable for identification even if they have fallen to the ground."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_4.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_4.png",
+        "headline": "Grass or sedge",
+        "text": "Use this category for grasses and sedges, which are characterized by long, thin leaves with parallel running nerves and lack of petioles. Their flowers are inconspicuous, sitting in spike-like or panicle-like inflorescences, such as those found on cereals, which are all grasses. At first glance, these species are difficult to distinguish, so it is important to get close. Especially the ligule, which is located between the leaf and the stalk, and single flowers are important for identification. Several very detailed and informative photos are necessary for a reliable identification."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help//story_img_49_5.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_5.png",
+        "headline": "Fern",
+        "text": "Ferns often consist only of a basal rosette of leaves or individual leaves (fronds) that unroll with a fiddlehead. Since ferns form neither flowers nor fruits, they must be identified by their fronds. On their undersides, many species have conspicuous elevations (sori), in which the spores for reproduction are formed. The shape and arrangement of these elevations are often typical for the species. This makes them essential for identification. If fronds have no spores, they are sterile. These then often look different than the fertile fronds, although they belong to the same plant."
+      }
+    ]
+  },
+  {
+    "id": 1125,
+    "global_story_id": 61,
+    "category": "Aktuelles",
+    "category_priority": 50,
+    "post_priority": 20,
+    "fresh_after": "2022-03-10",
+    "fresh_before": "2022-04-04",
+    "language": "de",
+    "title": "Alte Buchenwälder",
+    "subtitle": "Vielfalt durch Totholz",
+    "title_icon": "https://flora-cdn.tu-ilmenau.de/help/icon_story61.jpg",
+    "title_image": "https://flora-cdn.tu-ilmenau.de/help/icon_story61.jpg",
+    "pages": [
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_1.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Alte Schätze",
+        "text": "Alte Buchenwälder sind in Deutschland sehr selten zu finden. \"Alt\" heißt, einige Bäume erreichen hier ihr biologisches Alter von ca. 350 Jahren. Die Buchen, welche heute die gewaltigen Totholzmengen liefern, keimten also, während das Schloss Versailles erbaut wurde.\nDeutschland beherbergt ca. 1/4 aller Buchenwälder weltweit und hat eine besondere Verantwortung für diese seltenen naturnahen Bestände. Bei einer natürlichen Entwicklung bilden Bereiche verschiedener Altersphasen nebeneinander eine enorme strukturelle Vielfalt."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_2.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Heilige Hallen",
+        "text": "Ein schönes Beispiel für einen alten Buchenwald in Deutschland sind die Heiligen Hallen im Süden Mecklenburg-Vorpommerns. Als geschütztes Naturwaldreservat bilden sie einer der wenigen Wälder mit Restbeständen uralten Buchen, die hier bis zu 50 m hoch sind. Der Wald wird seit über 150 Jahren nicht mehr bewirtschaftet. Die Totholzvorräte liegen bei gigantischen 200 m³ pro Hektar."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_3.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Totholz",
+        "text": "Die Besiedelung geschwächter Bäume mit dem Zunderschwamm (*Fomes fomentarius*) führt durch Weißfäule oft zum Stammbruch. Dann verbleibt der Hochstumpf als stehendes und die abgebrochene Krone als liegendes Totholz. Zunderschwammbäume haben eine Schlüsselstellung für den Erhalt der Biodiversität."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_4.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Mikrohabitate",
+        "text": "Neben dem Totholzanteil spielen Mikrohabitate an lebenden Bäumen eine wichtige Rolle für die Biodiversität im Buchenwald. Dazu gehören etwa Höhlen, Rindentaschen, Risse und Spalten, Kronenbrüche oder Blitzrinnen. Diese bilden die Grundlage für typische Lebensgemeinschaften."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_5.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Kaskade des Lebens",
+        "text": "Tot- und Altholz ist eine ungemein wichtiger Lebensraum: Von den ca. 20.000 Tierarten im Wald sind 1/3 darauf angewiesen. An der Kaskade des Abbaus von Totholz wirken tausende Pilz- und Insektenarten mit, welche oft an ganz bestimmte Abbaustadien gebunden sind."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_6.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Pilz Stachelbart",
+        "text": "Pilze wie der Stachelbart (*Hericium sp.*) sind ein Bestandteil der Pilzbesiedlungskaskade an sterbenden Bäumen und liegendem Totholz. Allerdings braucht er Stämme mit einer Mindestdicke, damit er wachsen kann. Daher kommt er im Wirtschaftswald so gut wie nicht vor."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_7.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Schließlich Humus",
+        "text": "Nach Jahrzehnten bleibt nur noch ein Haufen Humus. Die benötigte Zeit hängt u.a. von der Dicke des Stammes, Auflage auf dem Boden und der Besonnung ab. Am Abbauprozess sind in einer typischen Abfolge tausende Arten von Käfern, Fliegen, Pilzen und andere Organismen beteiligt."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_8.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Fragile Diversität",
+        "text": "Diversität im Buchenwald ist von der Totholzmenge und -vielfalt, sowie dem durchgängigen Vorhandensein von Wald abhängig. Totholzbewohner haben geringe Ausbreitungsfähigkeiten. Einmal verschwunden, haben sie auch bei guten Bedingungen keine Möglichkeit, sich lokal wieder anzusiedeln."
+      }
+    ]
+  },
+  {
+    "id": 1126,
+    "global_story_id": 61,
+    "category": "News",
+    "category_priority": 50,
+    "post_priority": 20,
+    "fresh_after": "2022-03-10",
+    "fresh_before": "2022-04-04",
+    "language": "en",
+    "title": "Old beech forests",
+    "subtitle": "Diversity by deadwood",
+    "title_icon": "https://flora-cdn.tu-ilmenau.de/help/icon_story61.jpg",
+    "title_image": "https://flora-cdn.tu-ilmenau.de/help/icon_story61.jpg",
+    "pages": [
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_1.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Old treasures",
+        "text": "Old beech forests are very rare in Germany. \"Old\" means that some trees here reach their biological age of about 350 years. The beeches that today provide the enormous amounts of deadwood thus germinated while the Palace of Versailles was being built.\nGermany is home to about 1/4 of all beech forests worldwide and has a special responsibility for these rare near-natural stands. In a natural development, areas of different age phases form an enormous structural diversity."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_2.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Heilige Hallen",
+        "text": "A beautiful example of an old beech forest in Germany is the Heilige Hallen forest (means Holy Halls) in the south of Mecklenburg-Vorpommern. As a protected natural forest reserve, it forms one of the few forests with remnants of ancient beech trees that are up to 50 m high here. The forest has not been harvested for over 150 years. The deadwood reserves amount to a gigantic 200 m³ per hectare."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_3.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Deadwood",
+        "text": "The colonisation of weakened trees with tinder fungus (*Fomes fomentarius*) often leads to trunk breakage due to white rot. Then the high stump remains as standing deadwood and the broken crown as lying deadwood. Tinder fungus trees play a key role in the conservation of biodiversity."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_4.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Microhabitats",
+        "text": "Besides deadwood, microhabitats on living trees play an important role for biodiversity in the beech forest. These include, for example, caves, bark pockets, cracks and crevices, crown fractures or lightning channels. These form the basis for typical biotic communities."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_5.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Cascade of life",
+        "text": "Dead and old wood is an immensely important habitat: Of the approximately 20,000 animal species in the forest, 1/3 are dependent on it. Thousands of fungi and insect species are involved in the cascade of decomposition of deadwood, which are often bound to very specific stages of decomposition."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_6.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Lion's mane",
+        "text": "Fungi such as lion's mane (*Hericium sp.*) are part of the fungal colonisation cascade on dying trees and lying deadwood. However, it needs trunks with a minimum thickness in order to grow. For this reason, it is rarely ever found in commercial forests."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_7.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Finally, humus",
+        "text": "After decades, all that remains is a pile of humus. The time required depends, among other things, on the thickness of the trunk, layer thickness on the ground and exposure to sunlight. Thousands of species of beetles, flies, fungi and other organisms are involved in the decomposition process in a typical sequence."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_61_8.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Fragile diversity",
+        "text": "Diversity in the beech forest depends on the amount and diversity of deadwood, as well as the continuous presence of forest. Deadwood inhabitants have low dispersal abilities. Once they have disappeared, they have no way to reestablish themselves locally, even under good conditions."
+      }
+    ]
+  },
+ {
+    "id": 1099,
+    "global_story_id": 49,
+    "category": "Tipps",
+    "category_priority": 20,
+    "post_priority": 17,
+    "fresh_after": "2022-05-10",
+    "fresh_before": "2022-05-16",
+    "language": "de",
+    "title": "Wuchsformen",
+    "subtitle": "Was soll ich auswählen?",
+    "title_icon": "https://flora-cdn.tu-ilmenau.de/help/icon_story49.jpg",
+    "title_image": "https://flora-cdn.tu-ilmenau.de/help/title_story49.jpg",
+    "pages": [
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_DE_1.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Auswahl der Wuchsform",
+        "text": "Als erster Schritt zur Pflanzenbestimmung mit Flora Incognita steht die Entscheidung für eine der vier vorgegebenen Wuchsformen. Diese Vorauswahl ist nötig, da sich für jede Wuchsform andere Pflanzenteile besser für die Bestimmung eignen. So ist es beispielsweise an einem hohen Baum schwierig, die Blüten zu fotografieren, während es bei einem Löwenzahn wenig sinnvoll ist, nach einem Bild der Rinde zu fragen.\nWenn Sie sich nicht sicher sind, welcher Wuchsform Ihr Pflanzenfund zuzuordnen ist, können Sie einfach eine beliebige Kategorie auswählen. Die Bestimmung wird auch dann funktionieren, nur wird möglicherweise eine unpassende Pflanzenperspektive gefordert. Die Bestimmung wird auch dann funktionieren, möglicherweise nur nicht ganz so präzise sein."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_2.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_2.png",
+        "headline": "Wildblume oder Strauch",
+        "text": "Diese Kategorie beinhaltet alle Kräuter und Sträucher, die kleiner sind als 2 Meter und keinen einzelnen, verholzten Stamm besitzen – was sie von Bäumen unterscheidet. Diese Wuchsform vereint die meisten Pflanzenarten."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_3.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_3.png",
+        "headline": "Baum",
+        "text": "Bäume zeichnen sich dadurch aus, dass sie langlebig sind und verholzen. Sie haben grundsätzlich einen Stamm, der sich zu einer Krone verzweigt. Durch Ihre Größe sind Blätter, Blüten oder Früchte oft nur schwer zu erreichen. Die meisten blühen nur kurz, deswegen fragen wir bei Bäumen je nach Jahreszeit vorrangig nach Fotos von Blättern, Rinde oder den Früchten, die sich auch auf den Boden gefallen noch zur Bestimmung eignen."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_4.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_4.png",
+        "headline": "Gras",
+        "text": "Verwenden Sie diese Kategorie für Süß- und Sauergräser, die durch lange, dünne Blätter mit parallellaufender Nervatur und fehlenden Blattstielen gekennzeichnet sind. Ihre Blüten sind unscheinbar, sie sitzen in ähren- oder rispenförmigen Blütenständen, wie man sie beispielsweise von Getreide - welche allesamt zu den Süßgräsern gehören - kennt. Auf den ersten Blick sind diese Arten schwer zu unterscheiden, daher ist es wichtig, nah an die Pflanze heranzugehen. Besonders das Blatthäutchen, was sich zwischen dem Blatt und dem Stängel befindet, und Einzelblüten sind wichtig für die Identifizierung. Für eine sichere Bestimmung sind mehrere sehr detailreiche und aussagekräftige Fotos notwendig."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_5.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_5.png",
+        "headline": "Farn",
+        "text": "Farne bestehen häufig nur aus einer grundständigen Blattrosette oder einzelnen Blättern (Wedel), die sich schneckenhausartig entrollen, wenn sie jung sind. Da Farne weder Blüten noch Früchte ausbilden, gibt es diese Bildkategorien bei den Farnen nicht. Stattdessen kann man auf den Unterseiten der Wedel bei vielen Arten auffällige Erhebungen (Sori) entdecken. Darin werden die Sporen für die Vermehrung gebildet. Die Form und Anordnung dieser Erhebungen sind oft arttypisch. Das macht sie wesentlich für die Bestimmung. Haben Wedel keine Sporen, bezeichnet man sie als steril. Diese sehen dann oft anders aus als die fertilen Wedel, obwohl sie der gleichen Pflanze angehören."
+      }
+    ]
+  },
+  {
+    "id": 1100,
+    "global_story_id": 49,
+    "category": "Tips",
+    "category_priority": 20,
+    "post_priority": 17,
+    "fresh_after": "2022-05-10",
+    "fresh_before": "2022-05-16",
+    "language": "en",
+    "title": "Growth habit",
+    "subtitle": "Which to choose?",
+    "title_icon": "https://flora-cdn.tu-ilmenau.de/help/icon_story49.jpg",
+    "title_image": "https://flora-cdn.tu-ilmenau.de/help/title_story49.jpg",
+    "pages": [
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_EN_1.jpg",
+        "icon": "assets/icon/icon_startscreen_new.svg",
+        "headline": "Why select a growth habit",
+        "text": "The first step in plant identification with Flora Incognita is to choose one of the four given growth habits. This selection is necessary because for eachform of growth, different parts of the plant are better suited for identification. For example, on a tall tree it is difficult to photograph the flowers, while on a dandelion it makes little sense to ask for a picture of the bark.\nIf you are not sure which growth form your plant belongs to, you can simply select any category. Identification will work even then, just possibly not be quite as precise."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_2.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_2.png",
+        "headline": "Herb or shrub",
+        "text": "This category includes all herbs and shrubs that are less than 2 meters tall and do not have a single woody stem - which distinguishes them from trees. This growth form unites the majority of plant species."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_3.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_3.png",
+        "headline": "Tree",
+        "text": "Trees have a woody stem and life for many years. Their trunk branches out to form a crown. Due to their size, leaves, flowers or fruits are often difficult to reach. Most of them bloom only for a short time, therefore, depending on the time of year, we primarily ask for photos of leaves, bark or the fruits of trees, which are still suitable for identification even if they have fallen to the ground."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help/story_img_49_4.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_4.png",
+        "headline": "Grass or sedge",
+        "text": "Use this category for grasses and sedges, which are characterized by long, thin leaves with parallel running nerves and lack of petioles. Their flowers are inconspicuous, sitting in spike-like or panicle-like inflorescences, such as those found on cereals, which are all grasses. At first glance, these species are difficult to distinguish, so it is important to get close. Especially the ligule, which is located between the leaf and the stalk, and single flowers are important for identification. Several very detailed and informative photos are necessary for a reliable identification."
+      },
+      {
+        "image": "https://flora-cdn.tu-ilmenau.de/help//story_img_49_5.jpg",
+        "icon": "https://flora-cdn.tu-ilmenau.de/help/story_49_logo_5.png",
+        "headline": "Fern",
+        "text": "Ferns often consist only of a basal rosette of leaves or individual leaves (fronds) that unroll with a fiddlehead. Since ferns form neither flowers nor fruits, they must be identified by their fronds. On their undersides, many species have conspicuous elevations (sori), in which the spores for reproduction are formed. The shape and arrangement of these elevations are often typical for the species. This makes them essential for identification. If fronds have no spores, they are sterile. These then often look different than the fertile fronds, although they belong to the same plant."
+      }
+    ]
+  }
+]

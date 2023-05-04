@@ -1,0 +1,28 @@
+{% extends 'main_app/layout.html' %}
+
+{% block title %} Edit page {% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Edit page</h1>
+     <div class="tank-forms">
+         <div class="head-polaroid page">
+             <form method="post" enctype="multipart/form-data">
+                 {% csrf_token %}
+                 {{ form_page.media }}
+                 <p><label class="title-label-page">Page id: {{ form_page.instance.id }}</label></p>
+                 {% for form in form_page %}
+                     <p><label class="title-label-page" for="{{ form.id_for_label }}">{{form.label}}: </label>{{ form }}</p>
+                     <div class="form-error">{{ form.errors }}</div>
+                 {% endfor %}
+                 <div class="form-error">{{ error_message }}</div>
+                 <div class="div-bt">
+                     <button class="button button_save" type="submit"><i class="fa-solid fa-floppy-disk" style="font-size: 1.2rem; color: #183153;"></i> Save</button>
+                     <a class="button button_del" onClick="javascript:history.go(-1);"><i class="fa-solid fa-rectangle-xmark" style="font-size: 1.25rem; color: #183153;"></i> Cancel</a>
+                 </div>
+             </form>
+         </div>
+    </div>
+
+</div>
+{% endblock %}

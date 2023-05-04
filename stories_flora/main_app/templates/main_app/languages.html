@@ -1,0 +1,23 @@
+{% extends 'main_app/layout.html' %}
+
+{% block title %} Languages {% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Languages ({{ languages.count }}):</h1>
+        <div class="grid-lang">
+            {% if languages %}
+            {% for lan in languages %}
+                <div class="polaroid polaroid-lang">
+                    <div class="container">
+                        <div class="item-center-bold story-title">Id:</div>
+                        <div class="item-center-normal story-text">{{ lan.pk }}</div>
+                    </div>
+                </div>
+            {% endfor %}
+            {% else %}
+                <p>There is no language</p>
+            {% endif %}
+        </div>
+</div>
+{% endblock %}
