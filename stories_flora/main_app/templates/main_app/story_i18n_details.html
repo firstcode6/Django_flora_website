@@ -37,19 +37,11 @@
                         <div class="grid-two-columns"><h3>Language: {{ page_story.language }} </h3></div>
                         <div class="item-center-bold i18n-title">Title image:</div>
                         <div class="item-center-bold i18n-title">Icon image:</div>
-                        <div class="grid-img"><img src={{ page_story.title_image.url|unquote_new|remove_media }} alt="Title image"></div>
-                        <div class="grid-img"><img src={{ page_story.title_icon.url|unquote_new|remove_media  }} alt="Icon image"></div>
-
+                        <div class="grid-img"><img src={{ page_story.title_image.url|unquote_new }} alt="Title image"></div>
+                        <div class="grid-img"><img src={{ page_story.title_icon.url|unquote_new  }} alt="Icon image"></div>
 
                         <div class="grid-two-columns item-left-bold i18n-title">Title: {{ page_story.title|convert_markdown|safe }}</div>
                         <div class="grid-two-columns item-left-bold i18n-title">Subtitle: {{ page_story.subtitle|convert_markdown|safe }}</div>
-
-
-<!--                        <div class="grid-two-columns item-left-bold i18n-title">Title:</div>-->
-<!--                        <div class="grid-two-columns item-left-normal i18n-text">{{ page_story.title|convert_markdown|safe }}</div>-->
-<!--                        <div class="grid-two-columns item-left-bold i18n-title">Subtitle:</div>-->
-<!--                        <div class="grid-two-columns item-left-normal i18n-text">{{ page_story.subtitle|convert_markdown|safe }}</div>-->
-
 
                         <div class="item-center-normal"><h3>Pages ({{ pages.count }}):</h3></div>
 
@@ -69,18 +61,14 @@
 
                                         <div class="item-center-bold page-title">Image:</div>
                                         <div class="item-center-bold page-title">Icon:</div>
-                                        <div class="grid-img"><img src={{ p.image.url|unquote_new|remove_media }} alt="Image"></div>
-                                        <div class="grid-img"><img src={{ p.icon.url|unquote_new|remove_media  }} alt="Icon"></div>
+                                        <div class="grid-img"><img src={{ p.image.url|unquote_new }} alt="Image"></div>
+                                        <div class="grid-img"><img src={{ p.icon.url|unquote_new  }} alt="Icon"></div>
 
                                         <div class=" item-left-bold page-title">Page id: <p class="page-text">{{ p.pk }}</p></div>
                                         <div class=" item-left-bold page-title">Mark deleted: <p class="page-text">{{ p.mark_deleted }}</p></div>
                                         <div class=" item-left-bold page-title">Headline: {{ p.headline|convert_markdown|safe }}</div>
                                         <div class=" item-left-bold page-title">Order: <p class="page-text">{{ p.order }}</p></div>
 
-
-
-<!--                                        <div class="grid-two-columns item-left-bold page-title">Headline:</div>-->
-<!--                                        <div class="grid-two-columns item-left-normal page-text">{{ p.headline|convert_markdown|safe }}</div>-->
                                         <div class="grid-two-columns item-left-bold page-title">Text:</div>
                                         <div class="grid-two-columns item-left-normal page-text">{{ p.text|convert_markdown|safe }}</div>
 
@@ -104,7 +92,7 @@
 
                         </div>
 
-                        <a class="button button_edit" onClick="javascript:history.go(-1);"><i class="fa-solid fa-right-to-bracket fa-rotate-180" style="font-size: 1.1rem; color: #183153;"></i> Previous Page</a>
+                        <a class="button button_edit" onClick="javascript:history.go(-1);"><i class="fa-solid fa-right-to-bracket fa-rotate-180" style="font-size: 1.1rem; color: #183153;"></i> Previous page</a>
                         <a href="{% url 'story_details' page_story.story %}" class="button button_edit"><i class="fa-solid fa-right-to-bracket fa-rotate-180" style="font-size: 1.1rem; color: #183153;"></i>  Back to stories</a>
 
 

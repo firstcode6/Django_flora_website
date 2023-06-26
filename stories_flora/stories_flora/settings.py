@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-import os.path
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -19,9 +19,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+#SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 SECRET_KEY = 'django-insecure-ahnitwwj9_x4v4@z))8abi%frwg4^+xjw(e=vf7xit2g_99ocy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = os.environ.get('DJANGO_DEBUG') == '1'
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
@@ -78,10 +80,10 @@ WSGI_APPLICATION = 'stories_flora.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'stories3',
-        'USER': 'user1',
-        'PASSWORD': 'firststep',
-        'HOST': 'localhost',  # 'localhost', 'flora_stories_editor_postgres'
+        'NAME': 'stories3',  # os.environ['POSTGRES_DB'],  # 'stories3',
+        'USER': 'user1',  # os.environ['POSTGRES_USER'], # 'user1',
+        'PASSWORD': 'firststep',  # os.environ['POSTGRES_PASSWORD'], # 'firststep',
+        'HOST': 'flora_stories_editor_postgres',  # 'localhost', 'flora_stories_editor_postgres' #'localhost',
         'PORT': '5432'
     }
 }
@@ -117,29 +119,13 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
-
-
 
 # prefix url which will be added to url static files
+#STATIC_URL = os.environ['DJANGO_STATIC_URL']
 STATIC_URL = '/static/'
 
 # the path to the folder where all static files are stored
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-# not standard paths for files
-STATICFILES_DIRS = [
-    #BASE_DIR / "static",
-    # link to server
-]
-
-
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
-#DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # add frame settings for django3.0+ like this：
 X_FRAME_OPTIONS = 'SAMEORIGIN'
@@ -179,4 +165,5 @@ MDEDITOR_CONFIGS = {
 # for files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
+#  MEDIA_FQDN_PREFIX = os.environ['MEDIA_FQDN_PREFIX']
+# FORCE_SCRIPT_NAME = os.environ['DJANGO_FORCE_SCRIPT_NAME']

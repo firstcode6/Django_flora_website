@@ -1,9 +1,13 @@
 
+## Flora story editor
+![Flora story editor](stories_flora/main_app/static/main_app/img/Flora_editor.gif)
+
 ## Statring
 
-* Clone the project `https://kathleen.tu-ilmenau.de:7443/scm/fs/flora-stories-editor.git`
+* Clone the project:  `git clone https://github.com/firstcode6/Django_flora_website.git`
 
 * In `flora-stories-editor` folder, run command `docker-compose up -d --build` in the terminal.
+
 
 
 ## Information
@@ -30,6 +34,7 @@ Users:
 - Active: login: test3 password: activeflora.
 
 ## The structure of database
+The `Download Database` button saves the database in stories_flora/main_app/fixtures/data.json
 ![The structure of database](stories_flora/main_app/static/main_app/img/database.png)
 
 ## The hierarchy of htmls
@@ -42,5 +47,6 @@ MTV:
 - Modifications are easy;
 - Suitable both small and large applications;
 - URL pattern mapping takes place.
+
 ![MTV](stories_flora/main_app/static/main_app/img/pattern_MTV.png)
 

@@ -20,14 +20,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('main_app.urls')),
-    #path(r'mdeditor/', include('mdeditor.urls'))
+    # path('flora-stories-editor/admin/', admin.site.urls),
+    # path('flora-stories-editor/', include('main_app.urls')),
+    path('admin/', admin.site.urls),  # flora-stories-editor/
+    path('', include('main_app.urls')),  # flora-stories-editor/
+
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-# if settings.DEBUG:
-#     urlpatterns +=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-#if settings.DEBUG:
-    # static files (images, css, javascript, etc.)
-#   urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

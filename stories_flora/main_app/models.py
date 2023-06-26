@@ -1,9 +1,12 @@
+from django.conf import settings
 from django.db import models
 from django.contrib.postgres.fields import ArrayField
 import os
 import re
 from django.core.files.storage import FileSystemStorage
 from mdeditor.fields import MDTextField
+from urllib.parse import urljoin
+
 
 
 class Languages(models.Model):
@@ -113,9 +116,6 @@ class Stories(models.Model):
 
 def content_file_name_title_icon(instance, filename):
     file_extension = filename.split('.')[-1]
-    #print("instance.user.id", instance.user.id)
-    #print("instance.questid.id", instance.questid.id)
-
     filename = "title_icon_%s.%s" % (instance, file_extension)
     return os.path.join('stories/title_icon/', filename)
 
@@ -137,6 +137,7 @@ def content_file_name_image(instance, filename):
     filename = "image_%s.%s" % (instance, file_extension)
     return os.path.join('stories/image/', filename)
 
+# id_page id_storyi18n id_story 1008 1229 90
 
 class MyOwnStorage(FileSystemStorage):
     def get_available_name(self, name, max_length=None):
@@ -157,8 +158,8 @@ class MyOwnStorage(FileSystemStorage):
 class Stories_i18n(models.Model):
     title = MDTextField('Title')
     subtitle = MDTextField('Subtitle')
-    title_icon = models.ImageField(upload_to=content_file_name_title_icon, storage=MyOwnStorage(), verbose_name='Title icon')  # (default)storage=FileSystemStorage()
-    title_image = models.ImageField(upload_to=content_file_name_title_image, storage=MyOwnStorage(), verbose_name='Title image')
+    title_icon = models.ImageField(upload_to=content_file_name_title_icon, storage=MyOwnStorage(), verbose_name='Title icon', max_length=500)  # (default)storage=FileSystemStorage()
+    title_image = models.ImageField(upload_to=content_file_name_title_image, storage=MyOwnStorage(), verbose_name='Title image', max_length=500)
     language = models.ForeignKey(Languages, verbose_name='Language id', on_delete=models.PROTECT)
     story = models.ForeignKey(Stories, related_name="storiesi18n_stories", verbose_name='Story id', on_delete=models.PROTECT)
 
@@ -168,6 +169,24 @@ class Stories_i18n(models.Model):
     def get_absolute_url(self):
         return f'/story={self.story}/story_i18n={self.pk}/'
 
+    def save(self, *args, **kwargs):
+        # Call the parent save method to save the image
+        super().save(*args, **kwargs)
+
+        # Get the URL of the saved image
+        media_url = 'http://127.0.0.1:8000/media/'  # http://shafi.tu-ilmenau.de:8000/media/ http://127.0.0.1:8000/media/ http://127.0.0.1:8000/flora-stories-editor/media/
+
+        # http://127.0.0.1:8000/media/stories/title_image/title_image_None-de_107_0.jpg
+        url_image = urljoin(media_url, self.title_image.name)
+        url_icon = urljoin(media_url, self.title_icon.name)
+        print("media_url=", media_url)
+        print("self.title_image.name=", self.title_image.name)
+
+        # Update the title_image field to contain the full URL
+        self.title_image = url_image
+        self.title_icon = url_icon
+        super().save(*args, **kwargs)
+
     class Meta:
         verbose_name = 'Story_i18n'
         verbose_name_plural = 'Stories_i18n'
@@ -176,8 +195,8 @@ class Stories_i18n(models.Model):
 
 
 class Pages(models.Model):
-    image = models.ImageField(upload_to=content_file_name_image, storage=MyOwnStorage(), verbose_name='Image')
-    icon = models.ImageField(upload_to=content_file_name_icon, storage=MyOwnStorage(), verbose_name='Icon', default='assets/icon/icon_startscreen_new.svg')
+    image = models.ImageField(upload_to=content_file_name_image, storage=MyOwnStorage(), verbose_name='Image', max_length=500)
+    icon = models.ImageField(upload_to=content_file_name_icon, storage=MyOwnStorage(), verbose_name='Icon', default='assets/icon/icon_startscreen_new.svg', max_length=500)
     headline = MDTextField('Headline')
     text = MDTextField('Text')
     mark_deleted = models.BooleanField('Mark deleted', default=False)
@@ -189,6 +208,22 @@ class Pages(models.Model):
 
     def get_absolute_url(self):
         return f'/story={self.story_i18n.story}/story_i18n={self.story_i18n.pk}/'
+
+    def save(self, *args, **kwargs):
+        # Call the parent save method to save the image
+        super().save(*args, **kwargs)
+
+        # Get the URL of the saved image
+        media_url = 'http://127.0.0.1:8000/media/'  # http://shafi.tu-ilmenau.de:8000/media/ http://127.0.0.1:8000/media/ http://127.0.0.1:8000/flora-stories-editor/media/
+
+        # http://127.0.0.1:8000/media/stories/title_image/title_image_None-de_107_0.jpg
+        url_image = urljoin(media_url, self.image.name)
+        url_icon = urljoin(media_url, self.icon.name)
+
+        # Update the title_image field to contain the full URL
+        self.image = url_image
+        self.icon = url_icon
+        super().save(*args, **kwargs)
 
     class Meta:
         verbose_name = 'Page'

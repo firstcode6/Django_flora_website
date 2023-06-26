@@ -44,7 +44,7 @@
                     <div class="polaroid pd_story_i18n">
                         <div class="container">
                             <div class="grid-two-columns item-center-bold i18n-title">Title image:</div>
-                            <div class="grid-two-columns grid-img"><img src={{ st.title_image.url|unquote_new|remove_media }} alt="Title image"></div>
+                            <div class="grid-two-columns grid-img"><img src={{ st.title_image.url|unquote_new }} alt="Title image"></div>
 
                             <div class="grid-two-columns item-left-bold i18n-title">Story translation id: <p class="i18n-text">{{ st.pk }}</p></div>
                             <div class="grid-two-columns item-left-bold i18n-title">Language: <p class="i18n-text">{{ st.language }}</p></div>
@@ -71,7 +71,7 @@
                 </div>
             </div>
 
-             <a class="button button_edit" onClick="javascript:history.go(-1);"><i class="fa-solid fa-right-to-bracket fa-rotate-180" style="font-size: 1.1rem; color: #183153;"></i> Previous Page</a>
+             <a class="button button_edit" onClick="javascript:history.go(-1);"><i class="fa-solid fa-right-to-bracket fa-rotate-180" style="font-size: 1.1rem; color: #183153;"></i> Previous page</a>
              <a href="{% url 'home' %}" class="button button_edit"><i class="fa-solid fa-right-to-bracket fa-rotate-180" style="font-size: 1.1rem; color: #183153;"></i>  Back to stories</a>
         </div>
     </div>

@@ -26,7 +26,7 @@
                     {% if request.user.is_authenticated %}
                         <p>User: {{ user.username }} | <a href="{% url 'logout' %}"><li>Logout</li></a></p>
                     {% endif %}
-                    {% if request.user.is_superuser %}
+                    {% if request.user.is_staff %}
                         <a href="{% url 'admin:index' %}"><li>Admin panel</li></a>
                     {% endif %}
                 </div>

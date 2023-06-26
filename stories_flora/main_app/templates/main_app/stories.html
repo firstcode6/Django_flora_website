@@ -13,37 +13,33 @@
         <div class="row-filter">
              <div class="filter-block">
                 <h3 class="left-h3">Category:</h3>
-                {% for categ in view.get_categories %}
-                <div class="div-filter">
-                    <input type="checkbox" class="checked" name="categ_val" value="{{ categ.category.pk }}">
-                    <span class="span editContent">{{ categ.name }}</span>
+                 <div class="div-filter">
+                    <input type="checkbox" class="checked" name="categ_tip_val" value="{% if categ_tip_val %}True{% else %}True{% endif %}" {% if request.GET.categ_tip_val %}checked{% endif %}>
+                    <span class="span editContent"> Tips</span>
                 </div>
-                {% endfor %}
+                <div class="div-filter">
+                    <input type="checkbox" class="checked" name="categ_news_val" value="{% if checkbox_checked %}True{% else %}False{% endif %}" {% if request.GET.categ_news_val %}checked{% endif %}>
+                    <span class="span editContent"> News</span>
+                </div>
             </div>
             <div class="filter-block">
                 <h3 class="left-h3">Another:</h3>
                 <div class="div-filter">
-                    <input type="checkbox" class="checked" name="hidden_val" value="True" id="checkbox1" {% if checkbox1 %}checked{% endif %}>
+                    <input type="checkbox" class="checked" name="hidden_val" value="True" {% if request.GET.hidden_val %}checked{% endif %}>
                     <span class="span editContent"> Hide in stories</span>
                 </div>
                 <div class="div-filter">
-                    <input type="checkbox" class="checked" name="deleted_val" value="True" id="checkbox2" {% if checkbox2 %}checked{% endif %}>
-                    <span class="span editContent"> Deleted</span>
+                    <input type="checkbox" class="checked" name="deleted_val" value="False" {% if request.GET.deleted_val %}checked{% endif %}>
+                    <span class="span editContent"> Not deleted</span>
                 </div>
                 <div class="div-filter">
-                    <input type="checkbox" class="checked" name="date_val" value="True" id="checkbox3" {% if checkbox3 %}checked{% endif %}>
-                    <span class="span editContent"> Today: {% now "M d, Y" %} </span>
+                    <input type="checkbox" class="checked" name="date_val" value="True" {% if request.GET.date_val %}checked{% endif %}>
+                    <span class="span editContent"> Today: {% now "M d, Y" %}</span>
                 </div>
-
             </div>
-
         </div>
         <button class="button button_grey" type="submit"><i class="fa-solid fa-filter" style="font-size: 1.1rem;  color: #183153;"></i> Filter</button>
     </form>
-
-<!--    <input type="checkbox" id="checkbox11">checkbox</input>-->
-<!--    <button type="button" onClick="save()">save</button>-->
-
 
     <div class="grid-story">
         {% if stories_key %}
@@ -69,7 +65,7 @@
                 {% for i18n in el.storiesi18n_stories.all %}
                    {% if i18n.language|lower == 'de' %}
                         <div class="grid-two-columns item-center-bold i18n-title">Title image:</div>
-                        <div class="grid-two-columns grid-img"><img src={{ i18n.title_image.url|unquote_new|remove_media  }} alt="Title image"></div>
+                        <div class="grid-two-columns grid-img"><img src={{ i18n.title_image.url|unquote_new  }} alt="Title image"></div>
                         <div class="grid-two-columns item-left-bold i18n-title">Title:</div>
                         <div class="grid-two-columns item-left-normal i18n-text">{{ i18n.title|convert_markdown|safe }}</div>
                         <div class="grid-two-columns item-left-bold i18n-title">Subtitle:</div>
