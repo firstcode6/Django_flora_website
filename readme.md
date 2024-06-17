@@ -1,4 +1,4 @@
-**Key technologies:** *Django, Python, PostgreSQL, Docker, HTML, CSS, JavaScript, Jinja2, ORM, HttpClient, *
+**Key technologies:** *Django, Python, PostgreSQL, Docker, HTML, CSS, JavaScript, Jinja2, ORM, HttpClient*
 
 ## Flora story editor
 ![Flora story editor](stories_flora/main_app/static/main_app/img/Flora_editor.gif)
